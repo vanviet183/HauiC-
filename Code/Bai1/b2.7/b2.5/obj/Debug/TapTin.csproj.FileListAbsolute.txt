@@ -1,0 +1,8 @@
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\bin\Debug\b2.5.exe.config
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\bin\Debug\b2.5.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\bin\Debug\b2.5.pdb
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\obj\Debug\TapTin.csproj.AssemblyReference.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\obj\Debug\TapTin.csproj.SuggestedBindingRedirects.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\obj\Debug\TapTin.csproj.CoreCompileInputs.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\obj\Debug\b2.5.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai1\b2.7\b2.5\obj\Debug\b2.5.pdb

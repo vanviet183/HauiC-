@@ -1,0 +1,8 @@
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\bin\Debug\Bai4.exe.config
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\bin\Debug\Bai4.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\bin\Debug\Bai4.pdb
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\obj\Debug\Bai4.csproj.AssemblyReference.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\obj\Debug\Bai4.csproj.SuggestedBindingRedirects.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\obj\Debug\Bai4.csproj.CoreCompileInputs.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\obj\Debug\Bai4.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\Code\Bai4\Bai4\Bai4\obj\Debug\Bai4.pdb

@@ -1,0 +1,14 @@
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.1\bin\Debug\b6.1.exe.config
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.1\bin\Debug\b6.1.exe
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.1\bin\Debug\b6.1.pdb
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.1\obj\Debug\b6.1.csprojResolveAssemblyReference.cache
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.1\obj\Debug\b6.1.exe
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.1\obj\Debug\b6.1.pdb
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\bin\Debug\b6.1.exe.config
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\bin\Debug\b6.1.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\bin\Debug\b6.1.pdb
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\obj\Debug\b6.1.csproj.AssemblyReference.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\obj\Debug\b6.1.csproj.SuggestedBindingRedirects.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\obj\Debug\b6.1.csproj.CoreCompileInputs.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\obj\Debug\b6.1.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Bai 6\NguyenVanViet_2020600886\Bai 6\b6.1\obj\Debug\b6.1.pdb

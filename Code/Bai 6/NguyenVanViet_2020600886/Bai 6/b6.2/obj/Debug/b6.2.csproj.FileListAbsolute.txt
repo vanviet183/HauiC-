@@ -1,0 +1,6 @@
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.2\obj\Debug\b6.2.csprojResolveAssemblyReference.cache
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.2\bin\Debug\b6.2.exe.config
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.2\bin\Debug\b6.2.exe
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.2\bin\Debug\b6.2.pdb
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.2\obj\Debug\b6.2.exe
+c:\users\it supporter\documents\visual studio 2017\Projects\Bai 6\b6.2\obj\Debug\b6.2.pdb

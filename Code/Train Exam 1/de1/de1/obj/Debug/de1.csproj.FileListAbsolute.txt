@@ -1,0 +1,8 @@
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\obj\Debug\de1.csproj.AssemblyReference.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\obj\Debug\de1.csproj.SuggestedBindingRedirects.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\obj\Debug\de1.csproj.CoreCompileInputs.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\bin\Debug\de1.exe.config
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\bin\Debug\de1.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\bin\Debug\de1.pdb
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\obj\Debug\de1.exe
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\Code\Train Exam 1\de1\de1\obj\Debug\de1.pdb

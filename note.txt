@@ -1,0 +1,24 @@
+thao tác với LinQ
+- thêm package: sqlserver, tools
+- mở console log chạy lệnh:
+	Scaffold-DbContext "<database>" Microsoft.EntityFrameWorkCore.SqlServer -OutputDir Models
+
+- thêm attr Loaded vào thẻ Window
+- Truy vấn với linQ:
+	private void Window_Loaded(object sender,RoutedEventArgse)
+	{
+		// Tạo thể hiện của lớp Context
+    		QLBanHangContext db=new QLBanHangContext();
+
+    		// Truy vấn dữ liệu sử dụng LINQ
+    		var query = from 1sp in db.LoaiSanPhams
+                	    select 1sp;
+
+    		// Hiển thị dữ liệu lên data grid
+    		dgvLoaiSanPham.Items Source=query.ToList();
+	}
+
+- Show ra sử dụng thẻ DataGrid, thiết lập ko tựu động sinh ra cột theo ItemSource: attr AutoGen...="False"
+- Tiêu đề cột: <DataGridTextColumn Header="Mã loại" Binding="{Binding MaLoai}"/>
+- Background chẵn lẻ: AlternatingRowBackground-"LightBlue"
+- CanUserAddRows="False"

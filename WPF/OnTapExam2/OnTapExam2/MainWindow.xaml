@@ -1,0 +1,27 @@
+﻿<Window x:Class="OnTapExam2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnTapExam2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Họ tên nhân viên" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.554,0.033" Width="150" FontFamily="Times New Roman" FontSize="14" Height="30"/>
+        <Label Content="Loại nhân viên" HorizontalAlignment="Left" Margin="60,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.554,0.033" Width="150" FontFamily="Times New Roman" FontSize="14" Height="30"/>
+        <Label Content="Ngày sinh" HorizontalAlignment="Left" Margin="60,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.554,0.033" Width="150" FontFamily="Times New Roman" FontSize="14" Height="30"/>
+        <Label Content="Số tiền bán hàng" HorizontalAlignment="Left" Margin="60,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.554,0.033" Width="150" FontFamily="Times New Roman" FontSize="14" Height="30"/>
+        <TextBox Name="fullName" HorizontalAlignment="Left" Margin="246,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
+        <TextBox Name="sellMoney" HorizontalAlignment="Left" Margin="246,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" Height="30" />
+        <ComboBox Name="typeEmployee" SelectedIndex="0" HorizontalAlignment="Left" Margin="246,100,0,0" VerticalAlignment="Top" Width="200" Height="30" >
+            <ComboBoxItem>Cơ hữu</ComboBoxItem>
+            <ComboBoxItem>Không cơ hữu</ComboBoxItem>
+        </ComboBox>
+        <DatePicker Name="date" HorizontalAlignment="Left" Margin="246,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.047,0.171" Width="200" Height="30"/>
+        <ListBox Name="listBox"  Margin="60,262,60,87"/>
+        <Button Name="nhap" Content="Nhập" HorizontalAlignment="Left" Margin="192,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,0.201" Height="34" Width="75" Click="nhap_Click"/>
+        <Button Name="xoa" Content="Xóa" HorizontalAlignment="Left" Margin="346,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,0.201" Height="34" Width="75" Click="xoa_Click"/>
+        <Button Name="window2" Content="Window 2" HorizontalAlignment="Left" Margin="497,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,0.201" Height="34" Width="75" Click="window2_Click"/>
+
+    </Grid>
+</Window>

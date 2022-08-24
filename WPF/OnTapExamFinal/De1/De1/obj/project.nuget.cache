@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dm8f0OV/zisczNs6lWmZwQ4rUJRHDDGl1wOe5gWEeL+q6mbBn+x163PNJV4nDC99ZNaXHwexY7y5zyJi3l08gQ==",
+  "dgSpecHash": "jnV6zoLF4Fg0J1IxxP7cDUAeklTc86+nsIiqDtlOdIpvjEv2mpg0wwZvZBChT+Wwvq4LC2PgqyZOc6vAy4B8kw==",
   "success": true,
-  "projectFilePath": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\WPF\\OnTapExamFinal\\De1\\De1\\De1.csproj",
+  "projectFilePath": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\HauiCSharp\\WPF\\OnTapExamFinal\\De1\\De1\\De1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VAN VIET\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\VAN VIET\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

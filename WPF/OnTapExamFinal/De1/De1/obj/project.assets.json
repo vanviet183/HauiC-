@@ -1869,11 +1869,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\WPF\\OnTapExamFinal\\De1\\De1\\De1.csproj",
+      "projectUniqueName": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\HauiCSharp\\WPF\\OnTapExamFinal\\De1\\De1\\De1.csproj",
       "projectName": "De1",
-      "projectPath": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\WPF\\OnTapExamFinal\\De1\\De1\\De1.csproj",
+      "projectPath": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\HauiCSharp\\WPF\\OnTapExamFinal\\De1\\De1\\De1.csproj",
       "packagesPath": "C:\\Users\\VAN VIET\\.nuget\\packages\\",
-      "outputPath": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\WPF\\OnTapExamFinal\\De1\\De1\\obj\\",
+      "outputPath": "E:\\A Year 2 Sophomore\\Preiod 4\\.Net\\HauiCSharp\\WPF\\OnTapExamFinal\\De1\\De1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VAN VIET\\AppData\\Roaming\\NuGet\\NuGet.Config",

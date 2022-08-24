@@ -14,7 +14,7 @@
         <Label Content="Lương: " HorizontalAlignment="Left" Margin="40,133,0,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16" Height="35"/>
         <Label Content="Thưởng: " HorizontalAlignment="Left" Margin="40,173,0,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16" Height="35"/>
         <Label Content="Mã phòng: " HorizontalAlignment="Left" Margin="40,213,0,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16" Height="35"/>
-        <DataGrid Name="data" Margin="40,273,60,81" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" AutoGenerateColumns="False" SelectionChanged="data_SelectionChanged">
+        <DataGrid Name="data" Margin="40,273,60,96" FontFamily="Times New Roman" FontSize="14" FontWeight="Bold" AutoGenerateColumns="False" SelectionChanged="data_SelectionChanged">
            
             
             <DataGrid.Columns>
@@ -70,10 +70,46 @@
         <TextBox Name="nameI" HorizontalAlignment="Left" Margin="221,97,0,0" Foreground="Blue" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Height="25"/>
         <TextBox Name="salaryI" HorizontalAlignment="Left" Margin="221,137,0,0" Foreground="Blue" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Height="25"/>
         <TextBox Name="thuongI" HorizontalAlignment="Left" Margin="221,176,0,0" Foreground="Blue" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Height="25"/>
-        <Button Content="Thêm" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="180,424,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="Button_Click" FontFamily="Times New Roman" FontSize="16"/>
-        <Button Content="Sửa" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="300,424,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="Button_Click_1" FontFamily="Times New Roman" FontSize="16"/>
-        <Button Content="Xóa" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="420,424,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="Button_Click_2" FontFamily="Times New Roman" FontSize="16"/>
-        <Button Content="Tìm" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="540,424,0,0" VerticalAlignment="Top" Width="74" Height="31" Click="Button_Click_3" FontFamily="Times New Roman" FontSize="16"/>
+        <Button Content="Thêm" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="180,424,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="Button_Click" FontFamily="Times New Roman" FontSize="16">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Blue"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Sửa" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="300,424,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="Button_Click_1" FontFamily="Times New Roman" FontSize="16">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Blue"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Xóa" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="420,424,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="Button_Click_2" FontFamily="Times New Roman" FontSize="16">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Blue"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Tìm" Background="Blue" Foreground="White" HorizontalAlignment="Left" Margin="540,424,0,0" VerticalAlignment="Top" Width="74" Height="31" Click="Button_Click_3" FontFamily="Times New Roman" FontSize="16">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Blue"/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <ComboBox Name="rooms" HorizontalAlignment="Left" Margin="221,213,0,0" VerticalAlignment="Top" Width="249" Height="25">
         </ComboBox>
 

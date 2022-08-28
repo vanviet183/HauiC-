@@ -1,0 +1,5 @@
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\DeOnTap\DeOnTap02\DeOnTap02\obj\Debug\net6.0-windows\DeOnTap02.csproj.AssemblyReference.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\DeOnTap\DeOnTap02\DeOnTap02\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\DeOnTap\DeOnTap02\DeOnTap02\obj\Debug\net6.0-windows\App.g.cs
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\DeOnTap\DeOnTap02\DeOnTap02\obj\Debug\net6.0-windows\DeOnTap02_MarkupCompile.cache
+E:\A Year 2 Sophomore\Preiod 4\.Net\HauiCSharp\DeOnTap\DeOnTap02\DeOnTap02\obj\Debug\net6.0-windows\DeOnTap02_MarkupCompile.lref

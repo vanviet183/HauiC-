@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Label Name="mabn" Content="Mã bệnh nhân" HorizontalAlignment="Left" Margin="72,47,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
-        <Label Name="hoTen" Content="Họ tên" HorizontalAlignment="Left" Margin="72,82,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
-        <Label Name="diaChi" Content="Địa chỉ" HorizontalAlignment="Left" Margin="72,117,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
-        <Label Name="soNgay" Content="Số ngày nằm viện" HorizontalAlignment="Left" Margin="72,152,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
-        <Label Name="khoa" Content="Khoa khám" HorizontalAlignment="Left" Margin="72,187,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="276,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="276,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="276,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
-        <TextBox HorizontalAlignment="Left" Margin="276,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
+        <Label Content="Mã bệnh nhân" HorizontalAlignment="Left" Margin="72,47,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Họ tên" HorizontalAlignment="Left" Margin="72,82,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Địa chỉ" HorizontalAlignment="Left" Margin="72,117,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Số ngày nằm viện" HorizontalAlignment="Left" Margin="72,152,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Label Content="Khoa khám" HorizontalAlignment="Left" Margin="72,187,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox Name="maBN" HorizontalAlignment="Left" Margin="276,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
+        <TextBox Name="hoTen" HorizontalAlignment="Left" Margin="276,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
+        <TextBox Name="diaChi" HorizontalAlignment="Left" Margin="276,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
+        <TextBox Name="soNgay" HorizontalAlignment="Left" Margin="276,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="30"/>
         <ComboBox Name="khoaCb" HorizontalAlignment="Left" Margin="276,187,0,0" VerticalAlignment="Top" Width="200" Height="30"/>
         <DataGrid Name="data" Margin="40,234,40,60" AutoGenerateColumns="False" AlternatingRowBackground="AntiqueWhite">
             <DataGrid.Columns>

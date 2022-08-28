@@ -55,12 +55,72 @@ namespace DeOnTap01
 
         private void add_Click(object sender, RoutedEventArgs e)
         {
+            var query = db.BenhNhans.SingleOrDefault(bn => bn.MaBn.Equals(maBN.Text));
+            if(query != null)
+            {
+                MessageBox.Show("Ma benh nhan bi trung", "Thong bao");
+                showData();
+            } else
+            {
+                try
+                {
+                    if(checkDataInput())
+                    {
+                        BenhNhan benhNhan = new BenhNhan();
+                        benhNhan.MaBn = maBN.Text;
+                        benhNhan.HoTen = hoTen.Text;
+                        benhNhan.
+                    }
+                } catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
+            }
         }
 
         private void find_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+
+        private bool checkDataInput()
+        {
+            try
+            {
+                string tb = "";
+                if (manv.Text.Trim().Equals(""))
+                    tb += "Ban chua nhap ma nv";
+                if (hoten.Text.Trim().Equals(""))
+                    tb += "Ban chua nhap ho ten";
+                if (cb.SelectedIndex < 0)
+                    tb += "Ban chua chon phong ban";
+                double a;
+                if (luong.Text.Trim().Equals(""))
+                    tb += "Ban chua nhap luong";
+                else if (!double.TryParse(luong.Text, out a))
+                    tb += "Luong yeu cau nhap kieu so";
+
+                if (!tb.Equals(""))
+                {
+                    MessageBox.Show(tb, "Thong bao");
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }
+
+        
+
+        
+
+        

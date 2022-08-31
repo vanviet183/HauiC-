@@ -121,30 +121,42 @@ namespace De1
         // Check data
         private bool CheckDL()
         {
-            string tb = "";
-            if (manvI.Text == "" || nameI.Text == "" || salaryI.Text == "" || thuongI.Text == "")
-                tb += "\nBan can nhap day du du lieu!";
-            //int a;
-            //if (!int.TryParse(salaryI.Text, out a)) // Nếu đơn giá nhập vào không phải là số
-            //    tb += "\nLuong nhập vào phải là số!";
-
-            //if (!int.TryParse(thuongI.Text, out a)) // Nếu đơn giá nhập vào không phải là số
-            //    tb += "\nThuong nhập vào phải là số!";
-
-            //int salary = int.Parse(salaryI.Text);
-            //int thuong = int.Parse(thuongI.Text);
-            //if (salary < 0 || thuong < 0)
-            //    tb += "\nLuong nhap vao phai la so duong!";
-
-            //if (thuong < 0)
-            //    tb += "\nThuong nhap vao phai la so duong!";
-
-            if (!tb.Equals(""))
+            try
             {
-                MessageBox.Show(tb, "Thong Bao");
-                return false;
+                string tb = "";
+                if (manvI.Text.Trim().Equals(""))
+                    tb += "Ban chua nhap ma nv";
+                if (nameI.Text.Trim().Equals(""))
+                    tb += "Ban chua nhap ho ten";
+                if (rooms.SelectedIndex < 0)
+                    tb += "Ban chua chon phong ban";
+                int a;
+                if (salaryI.Text.Trim().Equals(""))
+                    tb += "Ban chua nhap luong";
+                else if (!int.TryParse(salaryI.Text, out a))
+                    tb += "Luong yeu cau nhap kieu so";
+                else if (int.Parse(salaryI.Text) < 3000 || int.Parse(salaryI.Text) > 9000)
+                    tb += "Yeu cau nhap luong tu 3000 den 9000";
+
+                if (thuongI.Text.Trim().Equals(""))
+                    tb += "Ban chua nhap thuong";
+                else if (!int.TryParse(thuongI.Text, out a))
+                    tb += "Thuong yeu cau nhap kieu so";
+                else if (int.Parse(thuongI.Text) < 100 || int.Parse(thuongI.Text) > 900)
+                    tb += "Yeu cau nhap thuong tu 100 den 900";
+
+                if (!tb.Equals(""))
+                {
+                    MessageBox.Show(tb, "Thong bao");
+                    return false;
+                }
+
+                return true;
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
-            return true;
+            
         }
 
 
@@ -154,16 +166,28 @@ namespace De1
             var nvChange = db.Nhanviens.SingleOrDefault(nv => nv.MaNv.Equals(manvI.Text));
             if(nvChange != null)
             {
-                nvChange.MaNv = manvI.Text;
-                nvChange.Hoten = nameI.Text;
-                nvChange.Luong = int.Parse(salaryI.Text);
-                nvChange.Thuong = int.Parse(thuongI.Text);
-                PhongBan phongban = (PhongBan) rooms.SelectedItem;
-                nvChange.MaPhong = phongban.MaPhong;
+                try
+                {
+                    if(CheckDL())
+                    {
+                        nvChange.MaNv = manvI.Text;
+                        nvChange.Hoten = nameI.Text;
+                        nvChange.Luong = int.Parse(salaryI.Text);
+                        nvChange.Thuong = int.Parse(thuongI.Text);
+                        PhongBan phongban = (PhongBan)rooms.SelectedItem;
+                        nvChange.MaPhong = phongban.MaPhong;
 
-                db.SaveChanges();
-                MessageBox.Show("Sua thanh cong");
-                showData();
+                        db.SaveChanges();
+                        MessageBox.Show("Sua thanh cong");
+                        showData();
+                    } else
+                        MessageBox.Show("Sua khong thanh cong");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
             }
         }
 

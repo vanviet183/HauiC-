@@ -1,15 +1,12 @@
 Note:
 - Header DataGrid center:
-		<DataGridTextColumn Binding="{Binding MaPhong}">
-                    <DataGridTextColumn.Header>
-                        Mã phòng
-                    </DataGridTextColumn.Header>
+		<DataGridTextColumn Header="Mã bệnh nhân" Binding="{Binding MaBn}">
                     <DataGridTextColumn.ElementStyle>
-                        <Style TargetType="{x:Type TextBlock}">
-                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
-                </DataGridTextColumn>		
+                </DataGridTextColumn>
 
 - Button elip:
 	<Button.Template>
@@ -20,6 +17,25 @@ Note:
                     </Grid>
                 </ControlTemplate>
 	</Button.Template>
+
+     <Window.Resources>
+        <Style x:Key="StyLeBorder" TargetType="{x:Type Button}">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="100" Background="Gray" >
+                            <ContentPresenter Focusable="False" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="FontFamily" Value="Times New Roman" />
+            <Setter Property="Foreground" Value="Blue" />
+        </Style>
+    </Window.Resources>
 
 - Show ComboBox:
 	private void showComboBox()
@@ -64,8 +80,56 @@ Note:
             
         }
 
+// Them
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            // check manv trung
+            var query = db.Nhanviens.SingleOrDefault(nv => nv.MaNv.Equals(manvI.Text));
+            if (query != null)
+            {
+                MessageBox.Show("Manv bi trung");
+                showData();
+            }
+            else
+            {
+                try
+                {
+                    if (CheckDL())
+                    {
+                        Nhanvien nv = new Nhanvien();
+                        nv.MaNv = manvI.Text;
+                        nv.Hoten = nameI.Text;
+                        nv.Luong = int.Parse(salaryI.Text);
+                        nv.Thuong = int.Parse((thuongI.Text));
+                        PhongBan phongBan = (PhongBan)rooms.SelectedItem;
+                        nv.MaPhong = phongBan.MaPhong;
+                        db.Nhanviens.Add(nv);
+
+                        // Save changes to database
+                        db.SaveChanges();
+                        MessageBox.Show("Them nhan vien thanh cong");
+                        showData();
+
+                        manvI.Clear();
+                        nameI.Clear();
+                        salaryI.Clear();
+                        thuongI.Clear();
+                        rooms.SelectedIndex = -1;
+                        manvI.Focus();
+                    }
+                    else
+                        return;
+
+                } catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
+        }
+
 // Sua
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Update_Click(object sender, RoutedEventArgs e)
         {
             var nvChange = db.Nhanviens.SingleOrDefault(nv => nv.MaNv.Equals(manvI.Text));
             if(nvChange != null)
@@ -84,7 +148,7 @@ Note:
         }
 
 // Xoa
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Delete_Click(object sender, RoutedEventArgs e)
         {
             var itemDel = db.Nhanviens.SingleOrDefault(nv => nv.MaNv.Equals(manvI.Text));
             if(itemDel != null)
@@ -147,6 +211,6 @@ Note:
                     TongLuong = g.Sum(g => g.Luong)
                 }).ToList();
 
-
-- Background chẵn lẻ: AlternatingRowBackground-"LightBlue"
-- CanUserAddRows="False"
+- Format:
+	CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
+	int.Parse(hang.SoLuongCon.ToString()).ToString("#,###", cul.NumberFormat)
